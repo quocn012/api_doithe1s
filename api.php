@@ -25,11 +25,8 @@ curl_setopt_array($curl,[
 ]);
 // lưu lại file
 $ex = curl_exec($curl);
-$file = fopen('info.txt','a');
-fwrite($file,"$ex \n");
-fclose($file);
 curl_close($curl);
-// lấy token xong bắt đầu chuyễn tiền
+// lấy cookie xong bắt đầu chuyễn tiền
 $curl = curl_init();
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => true,
