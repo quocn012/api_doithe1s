@@ -8,9 +8,9 @@ $password = ""; // mật khẩu doithe1s.vn
 /**
  * INFO THÔNG TIN CHUYỄN TIỀN
  */
-$sotien = ""; // số tiền chuyễn
+$sotien = ""; // số tiền chuyển
 $nguoinhan = ""; // người nhận
-$lydo = ""; // lý do chuyễn
+$lydo = ""; // lý do chuyển
 // đoạn nầy login lấy cookie cái
 $curl = curl_init();
 curl_setopt_array($curl,[
@@ -26,7 +26,7 @@ curl_setopt_array($curl,[
 // lưu lại file
 $ex = curl_exec($curl);
 curl_close($curl);
-// lấy cookie xong bắt đầu chuyễn tiền
+// lấy cookie xong bắt đầu chuyển tiền
 $curl = curl_init();
 curl_setopt_array($curl, [
     CURLOPT_RETURNTRANSFER => true,
